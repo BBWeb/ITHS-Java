@@ -8,25 +8,34 @@ public class Increment {
 		int i = 0; 
 		System.out.println("i: "+i);
 		
+		
 		// increment (= add one)
-		i++; 
+		i++;
+		// i = i + 1;
 		System.out.println("\ni++");
 		System.out.println("i: "+i);
 		
+		
 		// add 2
 		i += 2;
+		// i = i + 2;
 		System.out.println("\ni += 2;");
 		System.out.println("i: "+i);
 		
+		
 		// multiply by 3
 		i *= 3;
+		// i = i * 3;
 		System.out.println("\ni *= 3;");
 		System.out.println("i: "+i);
 
+		
 		// decrement (= subtract one)
 		i--;
+		// i = i - 1;
 		System.out.println("\ni--;");
 		System.out.println("i: "+i);
+		
 		
 		// Assign the current value of i to j; then increment i.
 		int j = i++;
@@ -37,7 +46,8 @@ public class Increment {
 		System.out.println("i: "+i);
 		System.out.println("j: "+j);
 		
-		// First, increment i. Then, assign the current value of i to j
+		
+		// Increment i; then assign the current value of i to j
 		j = ++i;
 		// Is equivalent to:
 		// i++;

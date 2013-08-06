@@ -16,7 +16,7 @@ public class DoubleVsFloat {
         float result2 = a2 + b2;
         System.out.println("float: "+ result2);
 
-        // Why do they differ?
+        // Why does the result differ?
 	}
 
 }

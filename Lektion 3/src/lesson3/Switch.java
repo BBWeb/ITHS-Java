@@ -19,7 +19,7 @@ public class Switch {
 		int input = scanner.nextInt();
 		System.out.println(); // print an empty line
 		
-		// Use the variable input to determine what code gets executed  
+		// Look at the variable input to determine what code gets executed  
 		switch (input) {
 
 			case 0: // In case input == 0
