@@ -9,7 +9,7 @@ public class ConditionalOne {
 		Scanner scanner = new Scanner(new InputStreamReader(System.in));
 		String answer;
 		
-		System.out.println("Please enter you age: ");
+		System.out.println("Please enter your age: ");
 		age = scanner.nextInt(); // Reads an integer from the line
 								 // and stores it in the variable
 		
