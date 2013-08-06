@@ -8,8 +8,7 @@ public class Switch {
 	public static void main(String[] args) {
 
 		System.out.println("Welcome to The Application!");
-		System.out.println("Please choose what you want to do.");
-		System.out.println();
+		System.out.println("Please choose what you want to do.\n");
 		System.out.println("0. Home");
 		System.out.println("1. Information");
 		System.out.println("2. More Information");
