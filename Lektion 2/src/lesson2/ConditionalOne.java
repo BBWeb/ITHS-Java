@@ -11,16 +11,18 @@ public class ConditionalOne {
 		
 		System.out.println("Please enter you age: ");
 		age = scanner.nextInt(); // Reads an integer from the line
+								 // and stores it in the variable
 		
-		if(age < 18) { // if age is < 18
+		if(age < 18) {
 			answer = "You are a child!";
-		} else if(age > 70) { // if age is 
+		} else if(age == 43) {
+			answer = "UNIX time age!";
+		} else if(age > 70) {
 			answer = "You are born earlier than 1943";
 		} else {
-			answer = "You remember the old days";
+			answer = "You are pretty ordinary when it comes to age";
 		}
 		
-		System.out.println(answer);
-		
+		System.out.println(answer);		
 	}
 }
