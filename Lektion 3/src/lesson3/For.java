@@ -28,6 +28,7 @@ public class For {
 		// This will loop infinitely
 //		for (;;) {
 //			System.out.println("Can anyone hear me?");
+//			break; // break works here as well!
 //		}
 		
 	}
