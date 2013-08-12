@@ -15,12 +15,13 @@ public class VariableMath {
 		System.out.println("fourthValue = " + fourthValue);
 		
 		// Prints: ? ;-)
-		fifthValue = value * fourthValue - secondValue / thirdValue;
-		System.out.println("fifthValue = " + fifthValue);
+		// TODO rewrite
+		 fifthValue = value * fourthValue - secondValue / thirdValue;
+		 System.out.println("fifthValue = " + fifthValue);
 		
 		// Prints: ? ;-)
-		fifthValue = value * (fourthValue - secondValue) / thirdValue;
-		System.out.println("fifthValue = " + fifthValue);
+		 fifthValue = value * (fourthValue - secondValue) / thirdValue;
+		 System.out.println("fifthValue = " + fifthValue);
 	}
 	
 }
