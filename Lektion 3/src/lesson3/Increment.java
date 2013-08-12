@@ -35,26 +35,6 @@ public class Increment {
 		// i = i - 1;
 		System.out.println("\ni--;");
 		System.out.println("i: "+i);
-		
-		
-		// Assign the current value of i to j; then increment i.
-		int j = i++;
-		// Is equivalent to:
-		// int j = i;
-		// i++;
-		System.out.println("\nint j = i++;");
-		System.out.println("i: "+i);
-		System.out.println("j: "+j);
-		
-		
-		// Increment i; then assign the current value of i to j
-		j = ++i;
-		// Is equivalent to:
-		// i++;
-		// j = i;
-		System.out.println("\nj = ++i;");
-		System.out.println("i: "+i);
-		System.out.println("j: "+j);
 
 	}
 
