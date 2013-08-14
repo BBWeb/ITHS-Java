@@ -17,7 +17,7 @@ public class IntArray {
 		System.out.println("Second number: "+numbers[1]);
 		System.out.println("Third number: "+numbers[2]);
 		
-		numbers[2] = numbers[0] + numbers[1] + 2;
+		numbers[2] = numbers[0] + numbers[1] + numbers[2];
 		System.out.println("\nModified third number. New value: "+numbers[2]);
 
 	}
