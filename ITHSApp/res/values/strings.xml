@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">ITHSApp</string>
+    <string name="name_label">Namn:</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="birth_year_label">Födelseår:</string>
+    <string name="occupation_label">Sysselsättning:</string>
+    <string name="phone_number_label">Telefon:</string>
+    <string name="save_button">Spara</string>
+
+</resources>
