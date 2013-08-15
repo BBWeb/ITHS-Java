@@ -3,13 +3,15 @@ package se.iths.victor.ithsapp;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class PersonActivity extends Activity {
+public class PersonActivity extends ActionBarActivity {
 	private PersonModel person;
 	private TextView nameText;
 	private TextView birthYearText;
@@ -28,15 +30,6 @@ public class PersonActivity extends Activity {
         phoneNumberText = (TextView) findViewById(R.id.phone_number);
         
         person = new PersonModel(getSharedPreferences(PersonModel.PREFERENCES, 0));
-        
-        changeButton = (Button) findViewById(R.id.change_button);
-        changeButton.setOnClickListener(new OnClickListener() {
-			
-			public void onClick(View v) {
-				Intent intent = new Intent(PersonActivity.this, FormActivity.class);
-				startActivity(intent);
-			}
-		});
     }
 
     @Override
@@ -53,7 +46,20 @@ public class PersonActivity extends Activity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_person, menu);
-        return true;
+        getMenuInflater().inflate(R.menu.iths_actionbar, menu);
+        return super.onCreateOptionsMenu(menu);
     }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+    	switch(item.getItemId()) {
+    		case R.id.action_change_profile:
+    			Intent intent = new Intent(PersonActivity.this, FormActivity.class);
+    			startActivity(intent);
+    			return true;
+    		default:
+    			return super.onOptionsItemSelected(item);
+    	}
+    }
+    
 }

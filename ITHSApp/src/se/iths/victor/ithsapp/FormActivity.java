@@ -2,6 +2,7 @@ package se.iths.victor.ithsapp;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class FormActivity extends Activity {
+public class FormActivity extends ActionBarActivity {
 	private Button saveButton;
 	private EditText nameEdit;
 	private EditText birthYearEdit;
@@ -48,6 +49,8 @@ public class FormActivity extends Activity {
 			}
         	
         });
+        
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         
     }
 
