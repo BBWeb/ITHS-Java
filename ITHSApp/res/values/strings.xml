@@ -8,5 +8,8 @@
     <string name="occupation_label">Sysselsättning:</string>
     <string name="phone_number_label">Telefon:</string>
     <string name="save_button">Spara</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_person">Profil</string>
+    <string name="change_button">Ändra</string>
 
 </resources>

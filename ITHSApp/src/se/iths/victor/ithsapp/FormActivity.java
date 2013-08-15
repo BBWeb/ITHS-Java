@@ -10,8 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class FormActivity extends Activity {
-	private static final String PREFERENCES = "PERSON";
-	
 	private Button saveButton;
 	private EditText nameEdit;
 	private EditText birthYearEdit;
@@ -29,7 +27,7 @@ public class FormActivity extends Activity {
         occupationEdit = (EditText) findViewById(R.id.occupation_edit);
         phoneNumberEdit = (EditText) findViewById(R.id.phone_number_edit);
         
-        person = new PersonModel(getSharedPreferences(PREFERENCES, 0));
+        person = new PersonModel(getSharedPreferences(PersonModel.PREFERENCES, 0));
         
         nameEdit.setText(person.getName());
         birthYearEdit.setText(person.getBirthYear());
@@ -46,6 +44,7 @@ public class FormActivity extends Activity {
 				person.setPhoneNumber(phoneNumberEdit.getEditableText().toString());
 				
 				person.save();
+				FormActivity.this.finish();
 			}
         	
         });

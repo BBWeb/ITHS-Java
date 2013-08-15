@@ -13,13 +13,11 @@ public class PersonModel {
 	public static final String BIRTH_YEAR = "BIRTH_YEAR";
 	public static final String OCCUPATION = "OCCUPATION";
 	public static final String PHONE_NUMBER = "PHONE_NUMBER";
+	public static final String PREFERENCES = "PERSON";
 	
 	public PersonModel(SharedPreferences sharedPreferences) {
 		this.sharedPreferences = sharedPreferences;
-		name = sharedPreferences.getString(NAME, "");
-		birthYear = sharedPreferences.getString(BIRTH_YEAR, "2000");
-		occupation = sharedPreferences.getString(OCCUPATION, "");
-		phoneNumber = sharedPreferences.getString(PHONE_NUMBER, "");
+		fetch();
 	}
 
 	public void save() {
@@ -63,6 +61,13 @@ public class PersonModel {
 
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
+	}
+
+	public void fetch() {
+		name = sharedPreferences.getString(NAME, "");
+		birthYear = sharedPreferences.getString(BIRTH_YEAR, "2000");
+		occupation = sharedPreferences.getString(OCCUPATION, "");
+		phoneNumber = sharedPreferences.getString(PHONE_NUMBER, "");
 	}
 	
 	
