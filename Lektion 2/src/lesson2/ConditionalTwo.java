@@ -1,28 +1,28 @@
 package lesson2;
 
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
 public class ConditionalTwo {
 	public static void main(String[] args) {
-		int x = 6, y = 5;
+		int age;
+		Scanner scanner = new Scanner(new InputStreamReader(System.in));
+		String answer;
 		
-		// Less than or equal
-		if(x <= 6) {
-			System.out.println("x <= 6");
+		System.out.println("Please enter your age: ");
+		age = scanner.nextInt(); // Reads an integer from the line
+								 // and stores it in the variable
+		
+		if(age < 18) {
+			answer = "You are a child!";
+		} else if(age == 43) {
+			answer = "UNIX time age!";
+		} else if(age > 70) {
+			answer = "You are born earlier than 1943";
 		} else {
-			System.out.println("x > 6");
+			answer = "You are pretty ordinary when it comes to age";
 		}
 		
-		// Not equal
-		if(y != 3) {
-			System.out.println("x != 3");
-		} else {
-			System.out.println("x = 3");
-		}
-		
-		// Greater than or equal
-		if(x + y >= 12) {
-			System.out.println("x + y is greater than or equals 12");
-		} else {
-			System.out.println("x + y is less than 12");
-		}
+		System.out.println(answer);		
 	}
 }

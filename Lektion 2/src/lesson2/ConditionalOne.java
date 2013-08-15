@@ -1,28 +1,30 @@
 package lesson2;
 
-import java.io.InputStreamReader;
-import java.util.Scanner;
-
 public class ConditionalOne {
 	public static void main(String[] args) {
-		int age;
-		Scanner scanner = new Scanner(new InputStreamReader(System.in));
-		String answer;
+		int x = 6, y = 5;
 		
-		System.out.println("Please enter your age: ");
-		age = scanner.nextInt(); // Reads an integer from the line
-								 // and stores it in the variable
-		
-		if(age < 18) {
-			answer = "You are a child!";
-		} else if(age == 43) {
-			answer = "UNIX time age!";
-		} else if(age > 70) {
-			answer = "You are born earlier than 1943";
+		// Less than or equal
+		if(x <= 6) {
+			System.out.println("x <= 6");
 		} else {
-			answer = "You are pretty ordinary when it comes to age";
+			System.out.println("x > 6");
 		}
 		
-		System.out.println(answer);		
+		// Not equal
+		if(y != 3) {
+			System.out.println("x != 3");
+		} else {
+			System.out.println("x = 3");
+		}
+		
+		// Greater than or equal
+		if(x + y >= 12) {
+			// Note that we just performed a calculation within an if clause -
+			// We don't need to save the result to a variable
+			System.out.println("x + y is greater than or equals 12");
+		} else {
+			System.out.println("x + y is less than 12");
+		}
 	}
 }

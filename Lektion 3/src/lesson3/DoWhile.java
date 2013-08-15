@@ -7,7 +7,7 @@ public class DoWhile {
 
 	public static void main(String[] args) {
 
-		// Create scanner, for fetching input
+		// Create scanner for fetching input
 		Scanner scanner = new Scanner(new InputStreamReader(System.in));
 		int input;
 
@@ -17,6 +17,7 @@ public class DoWhile {
 			input = scanner.nextInt();
 			System.out.println("Your number times two is "+(input*2)+"!");
 		}
+		// Continue looping as long as this is true
 		while (input < 10);
 		
 	}

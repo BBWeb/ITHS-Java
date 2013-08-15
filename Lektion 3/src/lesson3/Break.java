@@ -13,7 +13,7 @@ public class Break {
 			System.out.println("i: "+i);
 			i = i + 1; // Increment i
 			
-			// Abort infinite loop after 10 iterations
+			// After 10 iterations, abort infinite loop
 			if (i >= 10) {
 				System.out.println("aborting!");
 				break; // "breaks" out of the while loop 
