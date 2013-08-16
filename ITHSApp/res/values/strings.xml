@@ -12,5 +12,8 @@
     <string name="title_activity_person">Profil</string>
     <string name="change_button">Ändra</string>
     <string name="camera">Kamera</string>
+    <string name="contacts_button">Kontakter</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
 
 </resources>

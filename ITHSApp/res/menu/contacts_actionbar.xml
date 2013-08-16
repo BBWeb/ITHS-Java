@@ -6,12 +6,4 @@
           android:icon="@drawable/ic_content_edit"
           android:showAsAction="always"
           ithsapp:showAsAction="always" />
-    
-     <item android:id="@+id/action_contacts"
-          android:title="@string/contacts_button"
-          android:icon="@drawable/ic_social_group"
-          android:showAsAction="always"
-          ithsapp:showAsAction="always" />
-     
-     
 </menu>

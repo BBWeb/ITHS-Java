@@ -1,97 +1,103 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/name_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/name_label"
-        tools:context=".FormActivity" />
-
-    <EditText
-        android:id="@+id/name_edit"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/name_label"
-        android:layout_below="@+id/name_label"
-        android:layout_marginRight="32dp"
-        android:ems="10"
-        android:inputType="text" >
-
-        <requestFocus />
-    </EditText>
-
-    <TextView
-        android:id="@+id/birth_year_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/name_edit"
-        android:layout_below="@+id/name_edit"
-        android:layout_marginTop="30dp"
-        android:text="@string/birth_year_label" />
-
-    <EditText
-        android:id="@+id/birth_year_edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/birth_year_label"
-        android:layout_alignRight="@+id/name_edit"
-        android:layout_below="@+id/birth_year_label"
-        android:ems="10"
-        android:inputType="number" />
-
-    <TextView
-        android:id="@+id/occupation_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/birth_year_edit"
-        android:layout_below="@+id/birth_year_edit"
-        android:layout_marginTop="30dp"
-        android:text="@string/occupation_label" />
-
-    <EditText
-        android:id="@+id/occupation_edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/occupation_label"
-        android:layout_alignRight="@+id/birth_year_edit"
-        android:layout_below="@+id/occupation_label"
-        android:ems="10"
-        android:inputType="text" />
-
-    <TextView
-        android:id="@+id/phone_number_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/occupation_edit"
-        android:layout_below="@+id/occupation_edit"
-        android:layout_marginTop="30dp"
-        android:text="@string/phone_number_label" />
-
-    <EditText
-        android:id="@+id/phone_number_edit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/phone_number_label"
-        android:layout_alignRight="@+id/occupation_edit"
-        android:layout_below="@+id/phone_number_label"
-        android:ems="10"
-        android:inputType="phone" />
-
-    <Button
-        android:id="@+id/save_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/phone_number_edit"
-        android:layout_alignRight="@+id/phone_number_edit"
-        android:layout_below="@+id/phone_number_edit"
-        android:layout_marginTop="30dp"
-        android:text="@string/save_button" />
-
-</RelativeLayout>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	
+	    <TextView
+	        android:id="@+id/name_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="27dp"
+	        android:layout_marginTop="32dp"
+	        android:text="@string/name_label"
+	        tools:context=".FormActivity" />
+	
+	    <EditText
+	        android:id="@+id/name_edit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/name_label"
+	        android:layout_below="@+id/name_label"
+	        android:layout_marginRight="32dp"
+	        android:ems="10"
+	        android:inputType="text" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <TextView
+	        android:id="@+id/birth_year_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/name_edit"
+	        android:layout_below="@+id/name_edit"
+	        android:layout_marginTop="30dp"
+	        android:text="@string/birth_year_label" />
+	
+	    <EditText
+	        android:id="@+id/birth_year_edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/birth_year_label"
+	        android:layout_alignRight="@+id/name_edit"
+	        android:layout_below="@+id/birth_year_label"
+	        android:ems="10"
+	        android:inputType="number" />
+	
+	    <TextView
+	        android:id="@+id/occupation_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/birth_year_edit"
+	        android:layout_below="@+id/birth_year_edit"
+	        android:layout_marginTop="30dp"
+	        android:text="@string/occupation_label" />
+	
+	    <EditText
+	        android:id="@+id/occupation_edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/occupation_label"
+	        android:layout_alignRight="@+id/birth_year_edit"
+	        android:layout_below="@+id/occupation_label"
+	        android:ems="10"
+	        android:inputType="text" />
+	
+	    <TextView
+	        android:id="@+id/phone_number_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/occupation_edit"
+	        android:layout_below="@+id/occupation_edit"
+	        android:layout_marginTop="30dp"
+	        android:text="@string/phone_number_label" />
+	
+	    <EditText
+	        android:id="@+id/phone_number_edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/phone_number_label"
+	        android:layout_alignRight="@+id/occupation_edit"
+	        android:layout_below="@+id/phone_number_label"
+	        android:ems="10"
+	        android:inputType="phone" />
+	
+	    <Button
+	        android:id="@+id/save_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/phone_number_edit"
+	        android:layout_alignRight="@+id/phone_number_edit"
+	        android:layout_below="@+id/phone_number_edit"
+	        android:layout_marginTop="30dp"
+	        android:text="@string/save_button" />
+	
+	</RelativeLayout>
+</ScrollView>

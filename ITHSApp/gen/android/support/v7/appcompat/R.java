@@ -972,7 +972,8 @@ containing a value of this type.
         public static final int ic_camera=0x7f020058;
         public static final int ic_content_edit=0x7f020059;
         public static final int ic_launcher=0x7f02005a;
-        public static final int victor=0x7f02005b;
+        public static final int ic_social_group=0x7f02005b;
+        public static final int victor=0x7f02005c;
     }
     public static final class id {
         public static final int action_bar=0x7f05001a;
@@ -982,8 +983,9 @@ containing a value of this type.
         public static final int action_bar_root=0x7f050018;
         public static final int action_bar_subtitle=0x7f050021;
         public static final int action_bar_title=0x7f050020;
-        public static final int action_camera=0x7f050051;
-        public static final int action_change_profile=0x7f050052;
+        public static final int action_camera=0x7f050052;
+        public static final int action_change_profile=0x7f050051;
+        public static final int action_contacts=0x7f050053;
         public static final int action_context_bar=0x7f05001b;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
@@ -1109,15 +1111,19 @@ containing a value of this type.
         public static final int abc_screen=0x7f030015;
         public static final int abc_search_dropdown_item_icons_2line=0x7f030016;
         public static final int abc_search_view=0x7f030017;
-        public static final int activity_form=0x7f030018;
-        public static final int activity_person=0x7f030019;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int activity_contacts=0x7f030018;
+        public static final int activity_form=0x7f030019;
+        public static final int activity_person=0x7f03001a;
+        public static final int contact_item=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class menu {
-        public static final int activity_form=0x7f0c0000;
-        public static final int activity_person=0x7f0c0001;
-        public static final int form_actionbar=0x7f0c0002;
-        public static final int iths_actionbar=0x7f0c0003;
+        public static final int activity_contacts=0x7f0c0000;
+        public static final int activity_form=0x7f0c0001;
+        public static final int activity_person=0x7f0c0002;
+        public static final int contacts_actionbar=0x7f0c0003;
+        public static final int form_actionbar=0x7f0c0004;
+        public static final int iths_actionbar=0x7f0c0005;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1164,13 +1170,16 @@ containing a value of this type.
         public static final int birth_year_label=0x7f0a0011;
         public static final int camera=0x7f0a0018;
         public static final int change_button=0x7f0a0017;
+        public static final int contacts_button=0x7f0a0019;
         public static final int hello_world=0x7f0a0015;
         public static final int menu_settings=0x7f0a000f;
         public static final int name_label=0x7f0a000e;
         public static final int occupation_label=0x7f0a0012;
         public static final int phone_number_label=0x7f0a0013;
         public static final int save_button=0x7f0a0014;
+        public static final int title_activity_contacts=0x7f0a001b;
         public static final int title_activity_form=0x7f0a0010;
+        public static final int title_activity_main=0x7f0a001a;
         public static final int title_activity_person=0x7f0a0016;
     }
     public static final class style {

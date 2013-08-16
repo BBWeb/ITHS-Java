@@ -11,5 +11,6 @@
     <string name="title_activity_person">Profile</string>
     <string name="change_button">Change</string>
     <string name="camera">Camera</string>
-
+	<string name="contacts_button">Contacts</string>
+    
 </resources>

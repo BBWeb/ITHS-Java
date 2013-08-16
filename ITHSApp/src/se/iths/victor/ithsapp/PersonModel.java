@@ -1,16 +1,18 @@
 package se.iths.victor.ithsapp;
 
-import java.net.URI;
+import java.util.ArrayList;
 
-import android.content.SharedPreferences;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 
 public class PersonModel {
+	private int id;
 	private String name;
 	private String birthYear;
 	private String occupation;
 	private String phoneNumber; // So we can use +
-	private SharedPreferences sharedPreferences; // so we can save
 	private Uri picture;
 	
 	public static final String NAME = "NAME";
@@ -20,21 +22,66 @@ public class PersonModel {
 	public static final String PICTURE = "PICTURE";
 	public static final String PREFERENCES = "PERSON";
 	
-	public PersonModel(SharedPreferences sharedPreferences) {
-		this.sharedPreferences = sharedPreferences;
-		fetch();
+	public static final String GET_PERSONS = "SELECT rowid,* FROM persons;";
+	
+	public PersonModel(int id, String name, String birthYear, String occupation, String phoneNumber, Uri picture) {
+		this.id = id;
+		this.name = name;
+		this.birthYear = birthYear;
+		this.occupation = occupation;
+		this.phoneNumber = phoneNumber;
+		this.picture = picture;
 	}
-
-	public void save() {
-		SharedPreferences.Editor editor = sharedPreferences.edit();
-		editor.putString(NAME, name);
-		editor.putString(BIRTH_YEAR, birthYear);
-		editor.putString(OCCUPATION, occupation);
-		editor.putString(PHONE_NUMBER, phoneNumber);
-		editor.putString(PICTURE, picture.toString());
+	
+	public static ArrayList<PersonModel> loadPersons(Context context) {
+		ArrayList<PersonModel> persons = new ArrayList<PersonModel>();
+		DBHelper dbHelper = new DBHelper(context);
+		SQLiteDatabase db = dbHelper.getReadableDatabase();
 		
-		// To actually save things
-		editor.commit();
+		Cursor result = db.rawQuery(GET_PERSONS, null);
+		
+		if(result.getCount() > 0) {
+			result.moveToFirst();
+			do {
+				persons.add(new PersonModel(result.getInt(0),
+											result.getString(1),
+											result.getString(2),
+											result.getString(3),
+											result.getString(4),
+											Uri.parse(result.getString(5))));
+			} while(result.moveToNext());
+		}
+		
+		result.close();
+		db.close();
+		return persons;
+	}
+	
+	public void save(Context context) {
+		DBHelper dbHelper = new DBHelper(context);
+		SQLiteDatabase db = dbHelper.getWritableDatabase();
+		
+		if(id == -1) {
+			StringBuilder strBuilder = new StringBuilder();
+			strBuilder.append("INSERT INTO persons (name, birthYear, occupation, phoneNumber, picture)");
+			strBuilder.append(" VALUES(\"" + name + "\",\"" + birthYear + "\",\"");
+			strBuilder.append(occupation + "\",\"" + phoneNumber + "\",\"" + picture.toString() + "\");");
+			db.execSQL(strBuilder.toString());
+			
+			Cursor result = db.rawQuery("select last_insert_rowid()", null);
+			result.moveToFirst();
+			id = result.getInt(0);
+			result.close();
+		} else {
+			StringBuilder strBuilder = new StringBuilder();
+			strBuilder.append("UPDATE persons SET");
+			strBuilder.append(" name = \"" + name + "\", birthYear = \"" + birthYear + "\",");
+			strBuilder.append(" occupation = \"" + occupation + "\", phoneNumber = \"" + phoneNumber + "\", picture = \"" + picture.toString() + "\"");
+			strBuilder.append(" WHERE rowid = " + id);
+			db.execSQL(strBuilder.toString());
+		}
+		
+		db.close();
 	}
 	
 	public Uri getPicture() {
@@ -77,13 +124,4 @@ public class PersonModel {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public void fetch() {
-		name = sharedPreferences.getString(NAME, "");
-		birthYear = sharedPreferences.getString(BIRTH_YEAR, "2000");
-		occupation = sharedPreferences.getString(OCCUPATION, "");
-		phoneNumber = sharedPreferences.getString(PHONE_NUMBER, "");
-		picture = Uri.parse(sharedPreferences.getString(PICTURE, ""));
-	}
-	
-	
 }

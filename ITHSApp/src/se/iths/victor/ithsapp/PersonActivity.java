@@ -1,24 +1,18 @@
 package se.iths.victor.ithsapp;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 
-import android.media.ExifInterface;
-import android.os.Bundle;
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
-import android.graphics.drawable.Drawable;
+import android.media.ExifInterface;
+import android.net.Uri;
+import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,7 +23,6 @@ public class PersonActivity extends ActionBarActivity {
 	private TextView occupationText;
 	private TextView phoneNumberText;
 	private ImageView profileImage;
-	private Button changeButton;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,14 +35,18 @@ public class PersonActivity extends ActionBarActivity {
         phoneNumberText = (TextView) findViewById(R.id.phone_number);
         profileImage = (ImageView) findViewById(R.id.profile_image);
         
-        person = new PersonModel(getSharedPreferences(PersonModel.PREFERENCES, 0));
+        if(Transfer.getInstance().getCurrentPerson() != null) {
+        	person = Transfer.getInstance().getCurrentPerson();
+        	Transfer.getInstance().setCurrentPerson(null);
+        } else {
+        	person = new PersonModel(-1, "", "", "", "", Uri.parse(""));
+        }
+        
     }
 
     @Override
     protected void onResume() {
     	super.onResume();
-    	
-    	person.fetch();
     	
         nameText.setText(person.getName());
         birthYearText.setText(person.getBirthYear());
@@ -95,6 +92,7 @@ public class PersonActivity extends ActionBarActivity {
     	switch(item.getItemId()) {
     		case R.id.action_change_profile:
     			Intent intent = new Intent(PersonActivity.this, FormActivity.class);
+    			Transfer.getInstance().setCurrentPerson(person);
     			startActivity(intent);
     			return true;
     		default:

@@ -9,7 +9,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -41,7 +40,12 @@ public class FormActivity extends ActionBarActivity {
         occupationEdit = (EditText) findViewById(R.id.occupation_edit);
         phoneNumberEdit = (EditText) findViewById(R.id.phone_number_edit);
         
-        person = new PersonModel(getSharedPreferences(PersonModel.PREFERENCES, 0));
+        if(Transfer.getInstance().getCurrentPerson() != null) {
+        	person = Transfer.getInstance().getCurrentPerson();
+        	Transfer.getInstance().setCurrentPerson(null);
+        } else {
+        	person = new PersonModel(-1, "", "", "", "", Uri.parse(""));
+        }
         
         nameEdit.setText(person.getName());
         birthYearEdit.setText(person.getBirthYear());
@@ -57,7 +61,7 @@ public class FormActivity extends ActionBarActivity {
 				person.setOccupation(occupationEdit.getEditableText().toString());
 				person.setPhoneNumber(phoneNumberEdit.getEditableText().toString());
 				
-				person.save();
+				person.save(FormActivity.this);
 				FormActivity.this.finish();
 			}
         	
@@ -96,7 +100,7 @@ public class FormActivity extends ActionBarActivity {
         			file.delete();
     			}
     			person.setUri(newPhoto);
-    			person.save();
+    			person.save(FormActivity.this);
     		}
     	}
     }
