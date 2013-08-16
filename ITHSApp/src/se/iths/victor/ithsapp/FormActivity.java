@@ -90,9 +90,11 @@ public class FormActivity extends ActionBarActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     	if(requestCode == REQUEST_CODE_IMAGE) {
-    		if(resultCode == RESULT_OK) {;
-    			File file = new File(person.getPicture().getPath());
-    			file.delete();
+    		if(resultCode == RESULT_OK) {
+    			if(!person.getPicture().toString().equals("")) {
+    				File file = new File(person.getPicture().getPath());
+        			file.delete();
+    			}
     			person.setUri(newPhoto);
     			person.save();
     		}
