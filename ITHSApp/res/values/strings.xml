@@ -11,5 +11,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_person">Profil</string>
     <string name="change_button">Ändra</string>
+    <string name="camera">Kamera</string>
 
 </resources>

@@ -969,9 +969,10 @@ containing a value of this type.
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
         public static final int ic_action_search=0x7f020057;
-        public static final int ic_content_edit=0x7f020058;
-        public static final int ic_launcher=0x7f020059;
-        public static final int victor=0x7f02005a;
+        public static final int ic_camera=0x7f020058;
+        public static final int ic_content_edit=0x7f020059;
+        public static final int ic_launcher=0x7f02005a;
+        public static final int victor=0x7f02005b;
     }
     public static final class id {
         public static final int action_bar=0x7f05001a;
@@ -981,7 +982,8 @@ containing a value of this type.
         public static final int action_bar_root=0x7f050018;
         public static final int action_bar_subtitle=0x7f050021;
         public static final int action_bar_title=0x7f050020;
-        public static final int action_change_profile=0x7f050051;
+        public static final int action_camera=0x7f050051;
+        public static final int action_change_profile=0x7f050052;
         public static final int action_context_bar=0x7f05001b;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
@@ -1114,7 +1116,8 @@ containing a value of this type.
     public static final class menu {
         public static final int activity_form=0x7f0c0000;
         public static final int activity_person=0x7f0c0001;
-        public static final int iths_actionbar=0x7f0c0002;
+        public static final int form_actionbar=0x7f0c0002;
+        public static final int iths_actionbar=0x7f0c0003;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1159,6 +1162,7 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int app_name=0x7f0a000d;
         public static final int birth_year_label=0x7f0a0011;
+        public static final int camera=0x7f0a0018;
         public static final int change_button=0x7f0a0017;
         public static final int hello_world=0x7f0a0015;
         public static final int menu_settings=0x7f0a000f;
