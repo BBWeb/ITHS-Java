@@ -1,6 +1,6 @@
-package excercise1;
+package solutions1;
 
-public class Excercise1 {
+public class Exercise1 {
 
 	public static void main(String[] args) {
 
