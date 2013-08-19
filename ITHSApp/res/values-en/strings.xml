@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">ITHS App</string>
+    <string name="name_label">Name:</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="birth_year_label">Year of birth:</string>
+    <string name="occupation_label">Occupation:</string>
+    <string name="phone_number_label">Phone:</string>
+    <string name="save_button">Save</string>
+    <string name="title_activity_person">Profile</string>
+    <string name="change_button">Change</string>
+    <string name="camera">Camera</string>
+	<string name="contacts_button">Contacts</string>
+    
+</resources>

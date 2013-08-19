@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">ITHSApp</string>
+    <string name="name_label">Namn:</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="birth_year_label">Födelseår:</string>
+    <string name="occupation_label">Sysselsättning:</string>
+    <string name="phone_number_label">Telefon:</string>
+    <string name="save_button">Spara</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_person">Profil</string>
+    <string name="change_button">Ändra</string>
+    <string name="camera">Kamera</string>
+    <string name="contacts_button">Kontakter</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_contacts">ContactsActivity</string>
+
+</resources>
