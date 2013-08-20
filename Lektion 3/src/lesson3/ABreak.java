@@ -3,7 +3,7 @@ package lesson3;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Break {
+public class ABreak {
 
 	public static void main(String[] args) {
 		int i = 0;

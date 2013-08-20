@@ -1,6 +1,6 @@
 package lesson3;
 
-public class Increment {
+public class EIncrement {
 
 	public static void main(String[] args) {
 

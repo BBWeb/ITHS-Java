@@ -1,6 +1,6 @@
 package lesson3;
 
-public class IncrementOrder {
+public class FIncrementOrder {
 
 	/**
 	 * @param args

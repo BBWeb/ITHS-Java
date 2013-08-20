@@ -1,6 +1,6 @@
 package lesson3;
 
-public class Continue {
+public class BContinue {
 
 	/**
 	 * @param args

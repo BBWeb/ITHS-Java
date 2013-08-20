@@ -1,6 +1,6 @@
 package lesson3;
 
-public class For {
+public class GFor {
 
 	public static void main(String[] args) {
 		
