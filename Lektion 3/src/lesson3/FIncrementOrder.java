@@ -2,12 +2,9 @@ package lesson3;
 
 public class FIncrementOrder {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		int i = 5, j = 5;
-		System.out.println("i=5, j=5");
+		int i = -20, j = 5;
+//		System.out.println("i=5, j=5");
 		
 		// Assign the current value of j to i; then increment j.
 		i = j++;

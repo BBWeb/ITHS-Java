@@ -15,7 +15,7 @@ public class DSwitch {
 		System.out.print("Enter choice: ");
 
 		// Create scanner object, and read an integer from user
-		Scanner scanner = new Scanner(new InputStreamReader(System.in));
+		Scanner scanner = new Scanner(System.in);
 		int input = scanner.nextInt();
 		System.out.println(); // print an empty line
 		
