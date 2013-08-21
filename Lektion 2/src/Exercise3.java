@@ -1,17 +1,11 @@
-package solutions2;
-import java.io.BufferedInputStream;
+
 import java.util.Scanner;
 
+public class Exercise3 {
 
-public class IfExercise3 {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		Scanner scanner = new Scanner(new BufferedInputStream(System.in));
+		Scanner scanner = new Scanner(System.in);
 		System.out.print("Mata in ett tal: ");
 		int number = scanner.nextInt();
 

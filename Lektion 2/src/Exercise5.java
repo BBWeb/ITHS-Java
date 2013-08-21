@@ -1,12 +1,8 @@
-package solutions2;
 
-public class WhileExercise1 {
 
-	/**
-	 * @param args
-	 */
+public class Exercise5 {
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		int i = 1;
 		while (i <= 10) {

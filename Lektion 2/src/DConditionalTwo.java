@@ -1,16 +1,16 @@
-package lesson2;
+
 
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class ConditionalTwo {
+public class DConditionalTwo {
 	public static void main(String[] args) {
 		int age;
-		Scanner scanner = new Scanner(new InputStreamReader(System.in));
+		Scanner input = new Scanner(new InputStreamReader(System.in));
 		String answer;
 		
 		System.out.println("Please enter your age: ");
-		age = scanner.nextInt(); // Reads an integer from the line
+		age = input.nextInt(); // Reads an integer from the line
 								 // and stores it in the variable
 		
 		if(age < 18) {

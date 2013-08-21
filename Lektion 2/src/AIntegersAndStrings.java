@@ -1,6 +1,6 @@
-package lesson2;
 
-public class IntegersAndStrings {
+
+public class AIntegersAndStrings {
 	public static void main(String[] args) {
 		int a = 5, b = 3, c = 7;
 		String greeting = "Hello I am a nice person";
