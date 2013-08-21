@@ -1,8 +1,8 @@
 // This class is a part of package
-package lesson1;
+
 
 // Name of the class
-public class HelloWorld {
+public class AHelloWorld {
 	
 	// Main method executes when program starts
 	// String[] args is for program arguments

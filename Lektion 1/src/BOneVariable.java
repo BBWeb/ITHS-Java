@@ -1,6 +1,6 @@
-package lesson1;
 
-public class OneVariable {
+
+public class BOneVariable {
 	
 	public static void main(String[] args) {
 		

@@ -1,6 +1,6 @@
-package lesson1;
 
-public class VariableMath {
+
+public class CVariableMath {
 	
 	public static void main(String[] args) {
 		int value = 30;

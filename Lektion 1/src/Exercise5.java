@@ -1,4 +1,4 @@
-package solutions1;
+
 
 public class Exercise5 {
 
