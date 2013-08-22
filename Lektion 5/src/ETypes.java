@@ -1,6 +1,6 @@
 
 
-public class Types {
+public class ETypes {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {

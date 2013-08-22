@@ -1,6 +1,6 @@
 
 
-public class DoubleVsFloat {
+public class GDoubleVsFloat {
 
 	public static void main(String[] args) {
 

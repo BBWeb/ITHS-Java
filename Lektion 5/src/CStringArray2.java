@@ -1,6 +1,6 @@
 
 
-public class StringArray2 {
+public class CStringArray2 {
 
 	public static void main(String[] args) {
 		

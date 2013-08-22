@@ -1,6 +1,6 @@
 
 
-public class IntArray {
+public class BIntArray {
 
 	public static void main(String[] args) {
 		

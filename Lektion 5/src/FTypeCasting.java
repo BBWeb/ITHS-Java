@@ -1,6 +1,6 @@
 
 
-public class TypeCasting {
+public class FTypeCasting {
 
 	public static void main(String[] args) {
 

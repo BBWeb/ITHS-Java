@@ -3,7 +3,7 @@
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class StringArray3 {
+public class DStringArray3 {
 
 	/**
 	 * @param args

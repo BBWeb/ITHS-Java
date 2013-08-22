@@ -1,6 +1,6 @@
 
 
-public class StringArray1 {
+public class AStringArray1 {
 
 	public static void main(String[] args) {
 		
