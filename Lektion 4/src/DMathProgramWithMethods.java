@@ -3,7 +3,7 @@
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class MathProgramWithMethods {
+public class DMathProgramWithMethods {
 	
 	public static void main(String []args) {
 		Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,6 @@
 
 
-public class FinalExample {
+public class EFinalExample {
 
 	public static void main(String[] args) {
 		final int x = 6;

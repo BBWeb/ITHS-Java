@@ -3,7 +3,7 @@
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Method {
+public class BMethod {
 
 	
 	// Declare a new method

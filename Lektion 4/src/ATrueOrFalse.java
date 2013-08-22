@@ -1,6 +1,6 @@
 
 
-public class TrueOrFalse {
+public class ATrueOrFalse {
 	public static void main(String[] args) {
 		boolean weAreAtITHS = true;
 		boolean weLikeProgramming = true;
