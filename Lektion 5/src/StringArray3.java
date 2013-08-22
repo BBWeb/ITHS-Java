@@ -1,4 +1,4 @@
-package lesson5;
+
 
 import java.io.InputStreamReader;
 import java.util.Scanner;
