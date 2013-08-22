@@ -7,9 +7,9 @@ public class Exercise4 {
 
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		System.out.print("Mata in ett tal från 0 till 10: ");
-		int number = scanner.nextInt();
+		int number = input.nextInt();
 
 		if (number == 0) {
 			System.out.println("Noll");

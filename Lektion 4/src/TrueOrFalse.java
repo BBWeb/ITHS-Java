@@ -1,4 +1,4 @@
-package lesson4;
+
 
 public class TrueOrFalse {
 	public static void main(String[] args) {
