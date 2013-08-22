@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class MathProgramWithoutMethods {
 	
-	public static void main(String []args) {
-		Scanner scanner = new Scanner(new InputStreamReader(System.in));
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		int x, y, answer = 0;
 		char operator;
 		

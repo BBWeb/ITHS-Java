@@ -27,7 +27,7 @@ public class TrueOrFalse {
 			System.out.println("This will NEVER happen!");
 		}
 		
-		if(!(weAreFromOuterSpace && weAreFromEarth)) {
+		if( !(weAreFromOuterSpace && weAreFromEarth) ) {
 			System.out.println("This will ALWAYS happen");
 		}
 		
