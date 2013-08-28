@@ -7,7 +7,7 @@ public class BReadInput {
 	public static void main(String[] args) {
 		
 		// Creates the scanner object to read from System.in stream
-		Scanner scanner = new Scanner(new InputStreamReader(System.in));
+		Scanner scanner = new Scanner(System.in);
 		String input; // Where we are going to save the input
 		
 		// prints the question without a new line after
@@ -18,5 +18,9 @@ public class BReadInput {
 		
 		// Prints Hello NAME followed by a new line
 		System.out.println("Hello " + input);
+		
+		int age = scanner.nextInt();
+		System.out.println("age: "+age);
+		
 	}
 }

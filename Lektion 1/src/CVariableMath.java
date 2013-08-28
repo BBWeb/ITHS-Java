@@ -15,7 +15,6 @@ public class CVariableMath {
 		System.out.println("fourthValue = " + fourthValue);
 		
 		// Prints: ? ;-)
-		// TODO rewrite
 		 fifthValue = value * fourthValue - secondValue / thirdValue;
 		 System.out.println("fifthValue = " + fifthValue);
 		

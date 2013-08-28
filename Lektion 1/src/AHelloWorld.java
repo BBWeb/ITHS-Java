@@ -1,5 +1,3 @@
-// This class is a part of package
-
 
 // Name of the class
 public class AHelloWorld {

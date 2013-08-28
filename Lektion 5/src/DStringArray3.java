@@ -5,13 +5,10 @@ import java.util.Scanner;
 
 public class DStringArray3 {
 
-	/**
-	 * @param args
-	 */
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(new InputStreamReader(System.in));
+		Scanner scanner = new Scanner(System.in);
 		System.out.print("How many names do you want to enter? ");
 		int size = scanner.nextInt();
 		

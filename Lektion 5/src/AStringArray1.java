@@ -13,10 +13,10 @@ public class AStringArray1 {
 		names[1] = "Pelle";
 		names[2] = "Carl";
 		
-		System.out.println(names[0]);
-		System.out.println(names[1]);
+		String name = "Carl-Johan";
+		names[2] = name;
+		
 		System.out.println(names[2]);
-
 	}
 
 }

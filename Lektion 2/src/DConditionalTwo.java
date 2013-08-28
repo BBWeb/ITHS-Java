@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class DConditionalTwo {
 	public static void main(String[] args) {
 		int age;
-		Scanner input = new Scanner(new InputStreamReader(System.in));
+		Scanner input = new Scanner(System.in);
 		String answer;
 		
 		System.out.println("Please enter your age: ");

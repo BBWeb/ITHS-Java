@@ -13,9 +13,9 @@ public class CConditionalOne {
 		
 		// Not equal
 		if(y != 3) {
-			System.out.println("x != 3");
+			System.out.println("y != 3");
 		} else {
-			System.out.println("x = 3");
+			System.out.println("y = 3");
 		}
 		
 		// Greater than or equal

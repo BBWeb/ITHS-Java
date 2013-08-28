@@ -21,16 +21,15 @@ public class GFor {
 
 		System.out.println("\nThird loop:");
 		// ... And so is this
-//		i = 0;
-//		for (; i < 10;i++) {
-//			System.out.println("i: "+i);
-//			
-//		}
+		i = 0;
+		for (; i < 10;) {
+			System.out.println("i: "+i);
+			i++;
+		}
 		
 		// This will loop infinitely
 		for (int j = 0;;j++) {
 			System.out.println("Can anyone hear me? "+j);
-//			break; // break works here as well!
 		}
 		
 	}

@@ -16,11 +16,10 @@ public class ABreak {
 			// After 10 iterations, abort infinite loop
 			if (i >= 10) {
 				System.out.println("aborting!");
-				break; // "breaks" out of the while loop 
+				 
 			}
 		
 		}
 		
-		System.out.println("Good-bye");
 	}
 }
